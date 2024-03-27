@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE039A632B2359C300DBF169 /* MPMachHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DE039A622B2359C300DBF169 /* MPMachHeader.m */; };
+		DE120EC42B1251FE009A1114 /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE120EC32B1251FE009A1114 /* DetailRowView.swift */; };
+		DE120EC72B130FBD009A1114 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE120EC62B130FBD009A1114 /* DetailModel.swift */; };
+		DE120ECB2B136864009A1114 /* DetailTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE120ECA2B136864009A1114 /* DetailTitleView.swift */; };
+		DE120ED12B13AD19009A1114 /* MachOFileParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = DE120ED02B13AD19009A1114 /* MachOFileParsing.m */; };
+		DE227D762B0E434900C24EF2 /* MachOParsingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE227D752B0E434900C24EF2 /* MachOParsingApp.swift */; };
+		DE227D782B0E434900C24EF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE227D772B0E434900C24EF2 /* ContentView.swift */; };
+		DE227D7A2B0E434C00C24EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE227D792B0E434C00C24EF2 /* Assets.xcassets */; };
+		DE227D7D2B0E434C00C24EF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE227D7C2B0E434C00C24EF2 /* Preview Assets.xcassets */; };
+		DE227D842B0E4D9A00C24EF2 /* MachOFileParsingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE227D832B0E4D9A00C24EF2 /* MachOFileParsingView.swift */; };
+		DE227D872B0E4E0D00C24EF2 /* MachOFileParsingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE227D862B0E4E0D00C24EF2 /* MachOFileParsingViewModel.swift */; };
+		DE268C9C2B19C3FE00043F6B /* MPRow.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268C9B2B19C3FE00043F6B /* MPRow.m */; };
+		DE268C9F2B1A461F00043F6B /* MPLCSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268C9E2B1A461F00043F6B /* MPLCSegment.m */; };
+		DE268CA52B1A479600043F6B /* MPLCLoadDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CA42B1A479600043F6B /* MPLCLoadDylib.m */; };
+		DE268CA82B1A47D900043F6B /* MPLCSymtab.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CA72B1A47D900043F6B /* MPLCSymtab.m */; };
+		DE268CAB2B1A481300043F6B /* MPLCDysymtab.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CAA2B1A481300043F6B /* MPLCDysymtab.m */; };
+		DE268CB12B1A487100043F6B /* MPLCUuid.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CB02B1A487100043F6B /* MPLCUuid.m */; };
+		DE268CB42B1A48C400043F6B /* MPLCSourceVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CB32B1A48C400043F6B /* MPLCSourceVersion.m */; };
+		DE268CB72B1A48E300043F6B /* MPLCBuildVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CB62B1A48E300043F6B /* MPLCBuildVersion.m */; };
+		DE268CBA2B1A48FE00043F6B /* MPLCRpath.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CB92B1A48FE00043F6B /* MPLCRpath.m */; };
+		DE268CC02B1A498600043F6B /* MPLCEncryptionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CBF2B1A498600043F6B /* MPLCEncryptionInfo.m */; };
+		DE268CC32B1A49DF00043F6B /* MPLCMain.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CC22B1A49DF00043F6B /* MPLCMain.m */; };
+		DE268CC92B1A4A3B00043F6B /* MPLCDyldInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DE268CC82B1A4A3B00043F6B /* MPLCDyldInfo.m */; };
+		DE401FEF2B1DEF5F008F6EF4 /* MPLoadComand.m in Sources */ = {isa = PBXBuildFile; fileRef = DE401FEE2B1DEF5F008F6EF4 /* MPLoadComand.m */; };
+		DE401FF62B1E8116008F6EF4 /* MPLCDylinker.m in Sources */ = {isa = PBXBuildFile; fileRef = DE401FF52B1E8116008F6EF4 /* MPLCDylinker.m */; };
+		DE6B96682B28DFED00CFE0EA /* MPDysymbolTable.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6B96672B28DFED00CFE0EA /* MPDysymbolTable.m */; };
+		DE6B966A2B29F35900CFE0EA /* DysymbolTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B96692B29F35900CFE0EA /* DysymbolTableView.swift */; };
+		DE6B966C2B29F46700CFE0EA /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B966B2B29F46700CFE0EA /* TipsView.swift */; };
+		DE6B966E2B29F50900CFE0EA /* SymbolTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B966D2B29F50900CFE0EA /* SymbolTableView.swift */; };
+		DE6B96742B29F82800CFE0EA /* TableContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6B96732B29F82800CFE0EA /* TableContentsView.swift */; };
+		DE6FB1A72B1FA84E0066A517 /* MPLCLinkeditData.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FB1A62B1FA84E0066A517 /* MPLCLinkeditData.m */; };
+		DE6FB1AB2B1FDB5B0066A517 /* MPSection.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FB1AA2B1FDB5B0066A517 /* MPSection.m */; };
+		DE6FB1AF2B20FEA60066A517 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6FB1AE2B20FEA60066A517 /* DetailsView.swift */; };
+		DE74D4832B260B9400A992CE /* MPSymbolTable.m in Sources */ = {isa = PBXBuildFile; fileRef = DE74D4822B260B9400A992CE /* MPSymbolTable.m */; };
+		DE74D48A2B26158000A992CE /* ContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE74D4892B26158000A992CE /* ContentsView.swift */; };
+		DE845FD62BA8823F0067B3C9 /* FunctionStartsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE845FD52BA8823F0067B3C9 /* FunctionStartsTableView.swift */; };
+		DEA980822B147ED5005FB3FC /* DataCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA980812B147ED5005FB3FC /* DataCursor.m */; };
+		DEF56FD02B219523007C6F7B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF56FCF2B219523007C6F7B /* MenuView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE039A612B2359C300DBF169 /* MPMachHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPMachHeader.h; sourceTree = "<group>"; };
+		DE039A622B2359C300DBF169 /* MPMachHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPMachHeader.m; sourceTree = "<group>"; };
+		DE120E7F2B0E6369009A1114 /* MachOParsing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MachOParsing-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE120EC32B1251FE009A1114 /* DetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
+		DE120EC62B130FBD009A1114 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		DE120ECA2B136864009A1114 /* DetailTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTitleView.swift; sourceTree = "<group>"; };
+		DE120ECF2B13AD19009A1114 /* MachOFileParsing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOFileParsing.h; sourceTree = "<group>"; };
+		DE120ED02B13AD19009A1114 /* MachOFileParsing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachOFileParsing.m; sourceTree = "<group>"; };
+		DE227D722B0E434900C24EF2 /* MachOParsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachOParsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE227D752B0E434900C24EF2 /* MachOParsingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachOParsingApp.swift; sourceTree = "<group>"; };
+		DE227D772B0E434900C24EF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DE227D792B0E434C00C24EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE227D7C2B0E434C00C24EF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE227D832B0E4D9A00C24EF2 /* MachOFileParsingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachOFileParsingView.swift; sourceTree = "<group>"; };
+		DE227D862B0E4E0D00C24EF2 /* MachOFileParsingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachOFileParsingViewModel.swift; sourceTree = "<group>"; };
+		DE268C962B19BCBD00043F6B /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		DE268C9A2B19C3FE00043F6B /* MPRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPRow.h; sourceTree = "<group>"; };
+		DE268C9B2B19C3FE00043F6B /* MPRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPRow.m; sourceTree = "<group>"; };
+		DE268C9D2B1A461E00043F6B /* MPLCSegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCSegment.h; sourceTree = "<group>"; };
+		DE268C9E2B1A461F00043F6B /* MPLCSegment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCSegment.m; sourceTree = "<group>"; };
+		DE268CA32B1A479600043F6B /* MPLCLoadDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCLoadDylib.h; sourceTree = "<group>"; };
+		DE268CA42B1A479600043F6B /* MPLCLoadDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCLoadDylib.m; sourceTree = "<group>"; };
+		DE268CA62B1A47D900043F6B /* MPLCSymtab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCSymtab.h; sourceTree = "<group>"; };
+		DE268CA72B1A47D900043F6B /* MPLCSymtab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCSymtab.m; sourceTree = "<group>"; };
+		DE268CA92B1A481300043F6B /* MPLCDysymtab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCDysymtab.h; sourceTree = "<group>"; };
+		DE268CAA2B1A481300043F6B /* MPLCDysymtab.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCDysymtab.m; sourceTree = "<group>"; };
+		DE268CAF2B1A487100043F6B /* MPLCUuid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCUuid.h; sourceTree = "<group>"; };
+		DE268CB02B1A487100043F6B /* MPLCUuid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCUuid.m; sourceTree = "<group>"; };
+		DE268CB22B1A48C400043F6B /* MPLCSourceVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCSourceVersion.h; sourceTree = "<group>"; };
+		DE268CB32B1A48C400043F6B /* MPLCSourceVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCSourceVersion.m; sourceTree = "<group>"; };
+		DE268CB52B1A48E300043F6B /* MPLCBuildVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCBuildVersion.h; sourceTree = "<group>"; };
+		DE268CB62B1A48E300043F6B /* MPLCBuildVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCBuildVersion.m; sourceTree = "<group>"; };
+		DE268CB82B1A48FE00043F6B /* MPLCRpath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCRpath.h; sourceTree = "<group>"; };
+		DE268CB92B1A48FE00043F6B /* MPLCRpath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCRpath.m; sourceTree = "<group>"; };
+		DE268CBE2B1A498600043F6B /* MPLCEncryptionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCEncryptionInfo.h; sourceTree = "<group>"; };
+		DE268CBF2B1A498600043F6B /* MPLCEncryptionInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCEncryptionInfo.m; sourceTree = "<group>"; };
+		DE268CC12B1A49DF00043F6B /* MPLCMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCMain.h; sourceTree = "<group>"; };
+		DE268CC22B1A49DF00043F6B /* MPLCMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCMain.m; sourceTree = "<group>"; };
+		DE268CC72B1A4A3B00043F6B /* MPLCDyldInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCDyldInfo.h; sourceTree = "<group>"; };
+		DE268CC82B1A4A3B00043F6B /* MPLCDyldInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCDyldInfo.m; sourceTree = "<group>"; };
+		DE401FED2B1DEF5F008F6EF4 /* MPLoadComand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLoadComand.h; sourceTree = "<group>"; };
+		DE401FEE2B1DEF5F008F6EF4 /* MPLoadComand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLoadComand.m; sourceTree = "<group>"; };
+		DE401FF32B1E5A36008F6EF4 /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		DE401FF42B1E8116008F6EF4 /* MPLCDylinker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCDylinker.h; sourceTree = "<group>"; };
+		DE401FF52B1E8116008F6EF4 /* MPLCDylinker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCDylinker.m; sourceTree = "<group>"; };
+		DE6B96662B28DFED00CFE0EA /* MPDysymbolTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPDysymbolTable.h; sourceTree = "<group>"; };
+		DE6B96672B28DFED00CFE0EA /* MPDysymbolTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPDysymbolTable.m; sourceTree = "<group>"; };
+		DE6B96692B29F35900CFE0EA /* DysymbolTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DysymbolTableView.swift; sourceTree = "<group>"; };
+		DE6B966B2B29F46700CFE0EA /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		DE6B966D2B29F50900CFE0EA /* SymbolTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolTableView.swift; sourceTree = "<group>"; };
+		DE6B96732B29F82800CFE0EA /* TableContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableContentsView.swift; sourceTree = "<group>"; };
+		DE6FB1A52B1FA84E0066A517 /* MPLCLinkeditData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPLCLinkeditData.h; sourceTree = "<group>"; };
+		DE6FB1A62B1FA84E0066A517 /* MPLCLinkeditData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPLCLinkeditData.m; sourceTree = "<group>"; };
+		DE6FB1A92B1FDB5B0066A517 /* MPSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPSection.h; sourceTree = "<group>"; };
+		DE6FB1AA2B1FDB5B0066A517 /* MPSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPSection.m; sourceTree = "<group>"; };
+		DE6FB1AE2B20FEA60066A517 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		DE74D4812B260B9400A992CE /* MPSymbolTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPSymbolTable.h; sourceTree = "<group>"; };
+		DE74D4822B260B9400A992CE /* MPSymbolTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPSymbolTable.m; sourceTree = "<group>"; };
+		DE74D4892B26158000A992CE /* ContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsView.swift; sourceTree = "<group>"; };
+		DE845FD52BA8823F0067B3C9 /* FunctionStartsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionStartsTableView.swift; sourceTree = "<group>"; };
+		DEA980802B147ED5005FB3FC /* DataCursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataCursor.h; sourceTree = "<group>"; };
+		DEA980812B147ED5005FB3FC /* DataCursor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataCursor.m; sourceTree = "<group>"; };
+		DEF56FCF2B219523007C6F7B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE227D6F2B0E434900C24EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE120E832B0E63D9009A1114 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE268C962B19BCBD00043F6B /* Common.h */,
+				DE401FF32B1E5A36008F6EF4 /* Prefix.h */,
+				DE268C9A2B19C3FE00043F6B /* MPRow.h */,
+				DE268C9B2B19C3FE00043F6B /* MPRow.m */,
+				DE120ECF2B13AD19009A1114 /* MachOFileParsing.h */,
+				DE120ED02B13AD19009A1114 /* MachOFileParsing.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DE120EC52B130FA0009A1114 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE120EC62B130FBD009A1114 /* DetailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE120ECC2B13ACD1009A1114 /* Mach-O */ = {
+			isa = PBXGroup;
+			children = (
+				DE120ED22B13B008009A1114 /* Mach Header */,
+				DE120ED62B13B032009A1114 /* Load Commands */,
+				DE6FB1A82B1FDB3A0066A517 /* Section */,
+				DE74D4802B260B3B00A992CE /* Symbol Table */,
+			);
+			path = "Mach-O";
+			sourceTree = "<group>";
+		};
+		DE120ED22B13B008009A1114 /* Mach Header */ = {
+			isa = PBXGroup;
+			children = (
+				DE039A612B2359C300DBF169 /* MPMachHeader.h */,
+				DE039A622B2359C300DBF169 /* MPMachHeader.m */,
+			);
+			path = "Mach Header";
+			sourceTree = "<group>";
+		};
+		DE120ED62B13B032009A1114 /* Load Commands */ = {
+			isa = PBXGroup;
+			children = (
+				DE401FED2B1DEF5F008F6EF4 /* MPLoadComand.h */,
+				DE401FEE2B1DEF5F008F6EF4 /* MPLoadComand.m */,
+				DE268C9D2B1A461E00043F6B /* MPLCSegment.h */,
+				DE268C9E2B1A461F00043F6B /* MPLCSegment.m */,
+				DE268CA62B1A47D900043F6B /* MPLCSymtab.h */,
+				DE268CA72B1A47D900043F6B /* MPLCSymtab.m */,
+				DE268CA92B1A481300043F6B /* MPLCDysymtab.h */,
+				DE268CAA2B1A481300043F6B /* MPLCDysymtab.m */,
+				DE401FF42B1E8116008F6EF4 /* MPLCDylinker.h */,
+				DE401FF52B1E8116008F6EF4 /* MPLCDylinker.m */,
+				DE268CAF2B1A487100043F6B /* MPLCUuid.h */,
+				DE268CB02B1A487100043F6B /* MPLCUuid.m */,
+				DE268CB52B1A48E300043F6B /* MPLCBuildVersion.h */,
+				DE268CB62B1A48E300043F6B /* MPLCBuildVersion.m */,
+				DE268CB22B1A48C400043F6B /* MPLCSourceVersion.h */,
+				DE268CB32B1A48C400043F6B /* MPLCSourceVersion.m */,
+				DE268CC12B1A49DF00043F6B /* MPLCMain.h */,
+				DE268CC22B1A49DF00043F6B /* MPLCMain.m */,
+				DE268CBE2B1A498600043F6B /* MPLCEncryptionInfo.h */,
+				DE268CBF2B1A498600043F6B /* MPLCEncryptionInfo.m */,
+				DE268CC72B1A4A3B00043F6B /* MPLCDyldInfo.h */,
+				DE268CC82B1A4A3B00043F6B /* MPLCDyldInfo.m */,
+				DE268CA32B1A479600043F6B /* MPLCLoadDylib.h */,
+				DE268CA42B1A479600043F6B /* MPLCLoadDylib.m */,
+				DE268CB82B1A48FE00043F6B /* MPLCRpath.h */,
+				DE268CB92B1A48FE00043F6B /* MPLCRpath.m */,
+				DE6FB1A52B1FA84E0066A517 /* MPLCLinkeditData.h */,
+				DE6FB1A62B1FA84E0066A517 /* MPLCLinkeditData.m */,
+			);
+			path = "Load Commands";
+			sourceTree = "<group>";
+		};
+		DE227D692B0E434900C24EF2 = {
+			isa = PBXGroup;
+			children = (
+				DE227D742B0E434900C24EF2 /* MachOParsing */,
+				DE227D732B0E434900C24EF2 /* Products */,
+				DE120E7F2B0E6369009A1114 /* MachOParsing-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		DE227D732B0E434900C24EF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE227D722B0E434900C24EF2 /* MachOParsing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE227D742B0E434900C24EF2 /* MachOParsing */ = {
+			isa = PBXGroup;
+			children = (
+				DE227D752B0E434900C24EF2 /* MachOParsingApp.swift */,
+				DE227D772B0E434900C24EF2 /* ContentView.swift */,
+				DEA9807F2B147EBA005FB3FC /* Cursor */,
+				DE120ECC2B13ACD1009A1114 /* Mach-O */,
+				DE120E832B0E63D9009A1114 /* Core */,
+				DE120EC52B130FA0009A1114 /* Models */,
+				DE227D852B0E4DA800C24EF2 /* Views */,
+				DE227D882B0E4E1400C24EF2 /* ViewModels */,
+				DE227D792B0E434C00C24EF2 /* Assets.xcassets */,
+				DE227D7B2B0E434C00C24EF2 /* Preview Content */,
+			);
+			path = MachOParsing;
+			sourceTree = "<group>";
+		};
+		DE227D7B2B0E434C00C24EF2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DE227D7C2B0E434C00C24EF2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE227D852B0E4DA800C24EF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE227D832B0E4D9A00C24EF2 /* MachOFileParsingView.swift */,
+				DE120ECA2B136864009A1114 /* DetailTitleView.swift */,
+				DE120EC32B1251FE009A1114 /* DetailRowView.swift */,
+				DE74D4892B26158000A992CE /* ContentsView.swift */,
+				DEF56FCF2B219523007C6F7B /* MenuView.swift */,
+				DE6FB1AE2B20FEA60066A517 /* DetailsView.swift */,
+				DE6B966D2B29F50900CFE0EA /* SymbolTableView.swift */,
+				DE6B96692B29F35900CFE0EA /* DysymbolTableView.swift */,
+				DE845FD52BA8823F0067B3C9 /* FunctionStartsTableView.swift */,
+				DE6B96732B29F82800CFE0EA /* TableContentsView.swift */,
+				DE6B966B2B29F46700CFE0EA /* TipsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE227D882B0E4E1400C24EF2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DE227D862B0E4E0D00C24EF2 /* MachOFileParsingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DE6FB1A82B1FDB3A0066A517 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				DE6FB1A92B1FDB5B0066A517 /* MPSection.h */,
+				DE6FB1AA2B1FDB5B0066A517 /* MPSection.m */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		DE74D4802B260B3B00A992CE /* Symbol Table */ = {
+			isa = PBXGroup;
+			children = (
+				DE74D4812B260B9400A992CE /* MPSymbolTable.h */,
+				DE74D4822B260B9400A992CE /* MPSymbolTable.m */,
+				DE6B96662B28DFED00CFE0EA /* MPDysymbolTable.h */,
+				DE6B96672B28DFED00CFE0EA /* MPDysymbolTable.m */,
+			);
+			path = "Symbol Table";
+			sourceTree = "<group>";
+		};
+		DEA9807F2B147EBA005FB3FC /* Cursor */ = {
+			isa = PBXGroup;
+			children = (
+				DEA980802B147ED5005FB3FC /* DataCursor.h */,
+				DEA980812B147ED5005FB3FC /* DataCursor.m */,
+			);
+			path = Cursor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE227D712B0E434900C24EF2 /* MachOParsing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE227D802B0E434C00C24EF2 /* Build configuration list for PBXNativeTarget "MachOParsing" */;
+			buildPhases = (
+				DE227D6E2B0E434900C24EF2 /* Sources */,
+				DE227D6F2B0E434900C24EF2 /* Frameworks */,
+				DE227D702B0E434900C24EF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MachOParsing;
+			productName = MachOParsing;
+			productReference = DE227D722B0E434900C24EF2 /* MachOParsing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE227D6A2B0E434900C24EF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					DE227D712B0E434900C24EF2 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = DE227D6D2B0E434900C24EF2 /* Build configuration list for PBXProject "MachOParsing" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE227D692B0E434900C24EF2;
+			productRefGroup = DE227D732B0E434900C24EF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE227D712B0E434900C24EF2 /* MachOParsing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE227D702B0E434900C24EF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE227D7D2B0E434C00C24EF2 /* Preview Assets.xcassets in Resources */,
+				DE227D7A2B0E434C00C24EF2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE227D6E2B0E434900C24EF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE6FB1AB2B1FDB5B0066A517 /* MPSection.m in Sources */,
+				DE401FEF2B1DEF5F008F6EF4 /* MPLoadComand.m in Sources */,
+				DE268CB12B1A487100043F6B /* MPLCUuid.m in Sources */,
+				DE268C9C2B19C3FE00043F6B /* MPRow.m in Sources */,
+				DE6FB1AF2B20FEA60066A517 /* DetailsView.swift in Sources */,
+				DE6B966C2B29F46700CFE0EA /* TipsView.swift in Sources */,
+				DE74D4832B260B9400A992CE /* MPSymbolTable.m in Sources */,
+				DE268CA82B1A47D900043F6B /* MPLCSymtab.m in Sources */,
+				DE6B96682B28DFED00CFE0EA /* MPDysymbolTable.m in Sources */,
+				DE268CC92B1A4A3B00043F6B /* MPLCDyldInfo.m in Sources */,
+				DE268CAB2B1A481300043F6B /* MPLCDysymtab.m in Sources */,
+				DE227D842B0E4D9A00C24EF2 /* MachOFileParsingView.swift in Sources */,
+				DE268CC32B1A49DF00043F6B /* MPLCMain.m in Sources */,
+				DE120EC72B130FBD009A1114 /* DetailModel.swift in Sources */,
+				DE227D782B0E434900C24EF2 /* ContentView.swift in Sources */,
+				DE74D48A2B26158000A992CE /* ContentsView.swift in Sources */,
+				DE268C9F2B1A461F00043F6B /* MPLCSegment.m in Sources */,
+				DE6FB1A72B1FA84E0066A517 /* MPLCLinkeditData.m in Sources */,
+				DE039A632B2359C300DBF169 /* MPMachHeader.m in Sources */,
+				DEA980822B147ED5005FB3FC /* DataCursor.m in Sources */,
+				DE120ECB2B136864009A1114 /* DetailTitleView.swift in Sources */,
+				DE268CC02B1A498600043F6B /* MPLCEncryptionInfo.m in Sources */,
+				DE120EC42B1251FE009A1114 /* DetailRowView.swift in Sources */,
+				DE401FF62B1E8116008F6EF4 /* MPLCDylinker.m in Sources */,
+				DE6B966E2B29F50900CFE0EA /* SymbolTableView.swift in Sources */,
+				DE6B966A2B29F35900CFE0EA /* DysymbolTableView.swift in Sources */,
+				DE227D872B0E4E0D00C24EF2 /* MachOFileParsingViewModel.swift in Sources */,
+				DEF56FD02B219523007C6F7B /* MenuView.swift in Sources */,
+				DE120ED12B13AD19009A1114 /* MachOFileParsing.m in Sources */,
+				DE268CA52B1A479600043F6B /* MPLCLoadDylib.m in Sources */,
+				DE6B96742B29F82800CFE0EA /* TableContentsView.swift in Sources */,
+				DE268CB42B1A48C400043F6B /* MPLCSourceVersion.m in Sources */,
+				DE268CBA2B1A48FE00043F6B /* MPLCRpath.m in Sources */,
+				DE227D762B0E434900C24EF2 /* MachOParsingApp.swift in Sources */,
+				DE268CB72B1A48E300043F6B /* MPLCBuildVersion.m in Sources */,
+				DE845FD62BA8823F0067B3C9 /* FunctionStartsTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DE227D7E2B0E434C00C24EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE227D7F2B0E434C00C24EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE227D812B0E434C00C24EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MachOParsing/Preview Content\"";
+				DEVELOPMENT_TEAM = N8UR7239RD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.MachOParsing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MachOParsing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE227D822B0E434C00C24EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MachOParsing/Preview Content\"";
+				DEVELOPMENT_TEAM = N8UR7239RD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.star.MachOParsing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MachOParsing-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE227D6D2B0E434900C24EF2 /* Build configuration list for PBXProject "MachOParsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE227D7E2B0E434C00C24EF2 /* Debug */,
+				DE227D7F2B0E434C00C24EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE227D802B0E434C00C24EF2 /* Build configuration list for PBXNativeTarget "MachOParsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE227D812B0E434C00C24EF2 /* Debug */,
+				DE227D822B0E434C00C24EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE227D6A2B0E434900C24EF2 /* Project object */;
+}
